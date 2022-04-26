@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>wwww.belmontsummercamp.com</title>
+</head>
+<body>
+    <form action="" id="form">
+    <div class="formTitle">
+        <h2>Belmont Summer Camp</h2>
+    </div>
+    <div class="nameContainer">
+        <div id="nameAlert"></div>
+        <label for="firstName">Name:</label>
+        <input type="text" id="firstName" placeholder="first name">
+        <input type="text" id="lastName" placeholder="last name">
+    </div>
+    <div class="registryContainer">
+        <label for="town">Town:</label>
+        <select id="town">
+            <option value="deer park">Deer Park</option>
+            <option value="north babylon">North Babylon</option>
+            <option value="dix hills">Dix Hills</option>
+            <option value="brightwaters">Brightwaters</option>
+            <option value="brentwood">Brentwood</option>
+            <option value="wyandanch">Wyandanch</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="program">Program:</label>
+        <select id="program">
+            <option value="volleyball">volleyball</option>
+            <option value="tennis">tennis</option>
+            <option value="basketball">basketball</option>
+            <option value="hiking">hiking</option>
+            <option value="canoeing">canoeing</option>
+            <option value="archery">archery</option>
+        </select>
+    </div>
+    <div class="parentGuaradianContainer">
+        <label for="parentGuardian">Parent or Guardian:</label>
+        <input type="text" id="parentName" placeholder="Parent Name">
+    </div>
+    <div class="allergyContainer">
+        <label for="allergies">Allergies</label>
+        <select id="allergies">
+            <option value="nuts">nuts</option>
+            <option value="diary">diary</option>
+            <option value="pollen">pollen</option>
+        </select>
+    </div>
+    <div class="specialNeedsContainer">
+        <div class="specialNeedsLabel">
+            <label for="specialNeeds">Please List Any Specific Special Needs For Your Child:</label>
+        </div>
+        <textarea id="specialNeeds" placeholder="Specific needs"></textarea>
+    </div>
+    <div class="submitBtnContainer">
+        <button id="submitForm">Submit</button>
+    </div>
+    </form>
+    <div id="registeredKids"></div>
+</body>
+<script src="../js/index.js"></script>
+</html>
