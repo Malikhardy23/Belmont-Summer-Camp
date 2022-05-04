@@ -50,19 +50,19 @@ const inputValues = () => {
     for(const property in allValues){
        const registeredData = `${property}: ${allValues[property]}`;
        const container = document.createElement('div');
-       container.classList.add('active')
-       container.innerText = `${registeredData}`;
+       container.classList.add("active")
+       container.textContent = `${registeredData}`; 
        container.style.backgroundColor = "black";
        container.style.color = "white";
-       container.style.width = "50%";
+       container.style.width = "35%";
        container.style.display = "grid";
-       container.style.margin = "5px";
+       container.style.margin = "0 auto";
+       container.style.textAlign = "center"
        container.style.fontWeight = "bold"
        container.style.padding = "25px";
        container.style.border = "2px solid red";
-       document.body.appendChild(container);
-      
-
+      document.body.appendChild(container)
+      console.log(container);
         
     }
 
